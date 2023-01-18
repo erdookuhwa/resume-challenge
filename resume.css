@@ -36,7 +36,7 @@ p.enlarge span { color: #8C489F }
 
 /* //-- section styles -- */
 
-a#pdf { display: block; float: left; background: #443266; color: white; padding: 6px 40px; margin-bottom: 6px; text-decoration: none; font-family: cursive; }
+a#pdf { display: block; background: #443266; color: white; padding: 6px 10px; margin-bottom: 6px; text-decoration: none; font-family: cursive; text-align: center; border-radius: 7px; font-size: larger;}
 a#pdf:hover { background: #8C489F; }
 
 .job { position: relative; margin-bottom: 1em; padding-bottom: 1em; border-bottom: 1px solid #443266; }
