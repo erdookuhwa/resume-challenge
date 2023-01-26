@@ -11,8 +11,17 @@
 
 	<link rel="stylesheet" type="text/css" href="resume.css" media="all" />
 	<link rel="stylesheet" type="text/css" href="grid.css" media="all" />
-	<!-- <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css" media="all" />  -->
 	<script src="https://use.fontawesome.com/d88155ce4a.js"></script>
+	<script>
+		async function getCount() {
+    		const response = await fetch("https://eit2f3u56i.execute-api.us-east-1.amazonaws.com/dev/visitorCounter")
+    		const count = await response.json()
+
+			document.getElementById("visitors").innerHTML = count
+		}
+
+		getCount();
+	</script>
 
 </head>
 <body>
@@ -32,6 +41,7 @@
 						<h3><a id="pdf" href="https://www.linkedin.com/in/efficaciouseve/" target="_blank">My LinkedIn</a></h3>
 						<h3><i class="fa fa-envelope" aria-hidden="true"></i> &emsp; <a href="mailto:efficaciouseve@gmail.com">Email Me</a></h3>
 						<h3><i class="fa fa-phone" aria-hidden="true"></i> &emsp; <a href="tel:832-462-4469">Call Me</a></a></h3>
+						<p>Visitor Count: <span id="visitors"></span></p>
 					</div><!--// .contact-info -->
 				</div>
 			</div><!--// .yui-gc -->
@@ -197,7 +207,6 @@
 
 
 </div><!--// doc -->
-
 
 </body>
 </html>
