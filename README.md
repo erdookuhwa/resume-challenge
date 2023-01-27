@@ -31,3 +31,15 @@
 #### 6. DNS
 * Using Route53's hosted zone, configured Routing via CloudFront. My resume can be found at [resume.everlycloud.tk](https://resume.everlycloud.tk/)
 
+#### 7. JavaScript
+* Written a small script to fetch and update count via my API Gateway. Embedded within my html file. _Visitor Count_ can now be viewed on my resume page.
+
+#### 8. Database
+* Using Amazon's (Serverless) DynamoDB to retrieve and update visitor count
+
+#### 9. API
+* Within my lambda function, I've added an API Gateway which accepts requests (when there's a visit to my resume) and updates my database with the count.
+
+#### 10. Python
+* My lambda function (written in Python) handles the backend and uses boto3 which is an AWS SDK for Python
+
