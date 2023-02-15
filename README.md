@@ -43,3 +43,8 @@
 #### 10. Python
 * My lambda function (written in Python) handles the backend and uses boto3 which is an AWS SDK for Python
 
+#### 11. Tests
+* Set up tests using Cypress
+
+#### 12. Infrastructure as Code
+* Setting up with Terraform
